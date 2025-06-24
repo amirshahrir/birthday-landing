@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/birthday-landing/static/css/main.d2620b03.css",
+    "main.js": "/birthday-landing/static/js/main.4c590499.js",
+    "static/js/453.eaf5c9b1.chunk.js": "/birthday-landing/static/js/453.eaf5c9b1.chunk.js",
+    "static/media/pokemon-background.jpg": "/birthday-landing/static/media/pokemon-background.24a439c4da47c3b9dfbe.jpg",
+    "index.html": "/birthday-landing/index.html",
+    "main.d2620b03.css.map": "/birthday-landing/static/css/main.d2620b03.css.map",
+    "main.4c590499.js.map": "/birthday-landing/static/js/main.4c590499.js.map",
+    "453.eaf5c9b1.chunk.js.map": "/birthday-landing/static/js/453.eaf5c9b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2620b03.css",
+    "static/js/main.4c590499.js"
+  ]
+}
