@@ -1,38 +1,159 @@
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #cacaca; /* fallback or tint */
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("./assets/pokemon-background.jpg") no-repeat center
+    center;
+  background-size: cover;
+  opacity: 0.8; /* control the image opacity */
+  z-index: -1;
+}
+
 .App {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 5px solid #a8b8c8;
+  background: #ffffff;
+  align-items: center;
+  max-width: 100%;
+}
+
+.section .text {
+  flex: 1;
+  min-width: 280px;
+  padding-right: 20px;
+}
+
+.section-img {
+  flex-shrink: 0;
+  width: 160px;
+  height: auto;
+}
+
+h1 {
+  font-family: "Pokemon Solid", sans-serif;
+  color: #f9c932;
   text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-shadow: 4px 4px #345ca0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p,
+ul li {
+  color: #252525;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+input,
+textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  background: #a82028;
   color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.success-msg {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 800px) {
+  .App {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 600px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section .text {
+    padding-right: 0;
+  }
+
+  .section-img {
+    margin-top: 1rem;
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.95rem;
   }
 }
